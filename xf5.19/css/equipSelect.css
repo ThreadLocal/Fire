@@ -1,0 +1,299 @@
+[genuitec-file-id="wc1-19"],[genuitec-lp-path="/Fire/WebRoot/xf5.19/css/equipSelect.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+.ui-widget-header{
+	background: #3FA66E;
+	border: 1px solid  #3FA66E;
+}
+.ui-state-default{
+	background: #3FA66E;
+	border: 1px solid  #3FA66E;
+}
+#sort{
+	color: #f4f4f4;
+	margin-left:10px;
+	font-size:16px;
+	cursor: pointer;
+	font-weight: 600;
+	vertical-align: middle;
+}
+#sort:hover{
+	color: #3a8e5d;
+}
+.standTable{
+	width:100%;
+	max-width: 100%;
+	/*height: 100%;*/
+	color:#052;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.standTable th {
+	height: 35px;
+	background: #b9e0c1;
+	font-size: 1.4rem;
+	line-height:35px;
+	text-align: center;
+	color: #0c3854;
+	font-weight: 800;
+}
+.standTable td {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px #d5dee6 solid;
+	font-size: 1.3rem;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.standTable th:nth-child(1),.standTable th:nth-child(4),.standTable th:nth-child(6),.standTable th:nth-child(7){
+	width: 5.1%;
+}
+.standTable th:nth-child(2),.standTable th:nth-child(3),.standTable th:nth-child(5),.standTable th:nth-child(8),.standTable th:nth-child(9){
+	width: 16%;
+}
+
+.standTable td:nth-child(1),.standTable td:nth-child(4),.standTable td:nth-child(6),.standTable td:nth-child(7){
+	width: 5.1%;
+}
+.standTable td:nth-child(2),.standTable td:nth-child(3),.standTable td:nth-child(5),.standTable td:nth-child(8),.standTable td:nth-child(9){
+	width: 16%;
+}
+
+.standTable tr:nth-child(even) {
+	background: #fdfdfd;
+}
+.standTable tr:nth-child(odd) {
+	background: #f4f4f4;
+}
+
+
+#page_navigation{
+	list-style:none;
+	width:100%;
+	height:34px;/*44/1670*/
+	position: relative;
+	background-color: #f4f4f4;
+	border-bottom: 0.1rem #d5dee6 inset;
+}
+#page_navigation ul{
+	width:23.95209%;/*400/1670*/
+	height:100%;/*44*/
+	list-style:none;
+	position: relative;
+	left:39%;
+	float:left;
+}
+#page_navigation ul li {
+	float: left;
+	line-height:1.8em !important;
+
+}
+
+#pageSummary{
+	
+	line-height: 1.8;
+
+}
+
+/*鎼滅储鏍*/
+#searchDiv{
+	width:100%;
+	height:4.656085%;/*44/1670*/
+	/*border-bottom: 0.1rem #d5dee6 solid;*/
+}
+#searchDiv ul{
+	height: 65.909091%;/*29/44*/
+	width:100%;
+	/*line-height: 1.8125%;/!*29*16*!/*/
+	padding: 0.2994% 0;/*5/1670 12/1670*/
+	font-size: 1.6rem;
+	float:left;
+}
+.search-title{
+	width:120px;
+	height:20px;
+	font-size:14px;
+	color:#fff;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #056828;
+}
+.search-title:hover{
+	background-color: #66a61e;
+	cursor: pointer;
+}
+
+
+#searchDiv ul li{
+	height: 100%;
+	float:left;
+	/*text-align: center;*/
+	/*	*/
+}
+.search-Test{
+	line-height: 1.8;
+}
+
+#search-Type,
+#search-TypeSystem,
+#search-TypeTime,
+#search-Building,
+#search-handle,
+#search-square{
+	margin-left:1.497006%;/*25/1670*/
+}
+#search-Conditions{
+	margin-left:25px;/*25/1670*/
+	display: none;
+}
+#search-HandleSelect,
+#search-TypeSelect,
+#search-system,
+#search-time,
+#search-buildings,
+#search-squares{
+	margin-left:0.2994%;/*5/1670*/
+
+}
+.selectResult{
+	cursor: pointer;
+}
+
+#search-time{
+	height:100%;
+	width:21.5568%;/*360/1670*/
+}
+
+#selectHandle,#selectSystem,#selectType,#selectbuilding,#selectsquare{
+	border: 0.0625em solid #E0E0E0;
+	height: 100%;/*20/29*/
+}
+input[type="text"] {
+	border-radius: 1%;
+}
+.timeBox{
+	width: 41.6666%;/*150/300*/
+	border: 0.0625em solid #E0E0E0;
+	height: 100%;/*20/29*/
+	line-height: 20px;
+	padding-left: 2.2727%;/**/
+	/* background: #FFFFFF url("../images/calendor.png") no-repeat scroll right 2px; */
+	cursor: pointer;
+}
+.ConditionBox{
+	width: 85%;/*255/300*/
+	border: 0.0625em solid #E0E0E0;
+	height: 100%;/*20/29*/
+	line-height: 20px;
+	padding-left: 2.2727%;/**/
+	/* background: #FFFFFF url("../images/calendor.png") no-repeat scroll right 2px; */
+	cursor: text;
+}
+#search-Submit,
+#search-Reset{
+	width:3%;
+	margin-right:20px;
+}
+.sureButtum{
+	width:100%;
+	height:20px;
+	margin-top:4px;
+	font-size:14px;
+	color:#fff;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #056828;
+}
+.sureButtum:hover{
+	background-color: #66a61e;
+	cursor: pointer;
+}
+
+#search-buildings{
+	margin-right: 20px;
+}
+
+#allImageFalse{
+	position:absolute;
+	left:38%;/*650/1670*/
+	top:35%;/**/
+	font-size:1.8rem;
+	height:10%;
+	z-index: 999;
+
+}
+#imageFalse{
+	vertical-align: middle;
+}
+#imgFalseTest{
+	font-size:25px;
+	color: #878787;
+	vertical-align: middle;
+	margin-left:5px;
+}
+
+
+
+/*
+INPUt鏄彲浠ョ洿鎺ヨ缃儗鏅殑
+background: rgba(0, 0, 0, 0) url("../images/bu_date.png") no-repeat scroll right 2px;
+cursor: pointer;
+width: 115px;
+*/
+
+/*杩欐槸tr鐐瑰嚮寮瑰嚭妗�/
+#noticeDiv{
+	width: 480px;
+	background-color: rgba(255,255,255,0.99);
+}
+#windowClose {
+	float: right;
+	padding-right: 10px;
+}
+#windowClose:hover{
+	cursor: pointer;
+}
+#floorImg{
+	width:454px;
+	height:400px;
+	position:relative;
+}
+#noticeTitleDiv {
+	margin-bottom: 10px;
+	cursor: move;
+	height: 35px;
+	padding-left: 10px;
+	border-bottom: 2px solid #ababab;
+	/* background: #098876; */
+	/* color: white; */
+	line-height: 35px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+#informationDetaiContent li{
+	float:left;
+	width:50%;
+	text-align: left;
+}
+#informationDetaiContent li:nth-child(1){
+	width:100%;
+}
+#noInternet{
+	position:absolute;
+	top:42%;
+	left:30%;
+	heigth:200px;
+}
+#imageDiv{
+	   vertical-align: middle;
+}
+#noInternet span{
+    margin-left: 5px;
+}

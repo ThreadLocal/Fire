@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--禁止屏幕缩放-->
+    <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>监测楼栋</title>
+    <link rel="stylesheet" href="css/public/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/public/navigation.css" type="text/css" />
+    <link rel="stylesheet" href="css/monitor_building.css" type="text/css" />
+
+
+    <script type="text/javascript" src="js/public/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/public/default.js"></script>
+    <script type="text/javascript" src="js/monitor_building.js"></script>
+
+
+
+</head>
+
+<body id="body">
+<div id="mainDiv" >
+    <div id="headDiv">
+        <div id="headDivLogo">
+        </div>
+        <div id="headDivTitle">
+            智慧消防安全云服务平台
+        </div>
+         <div id="beforeLogin"> 
+        	<a href="../xf8.29/login.htm" style='text-decoration:underline'>管理系统入口</a>
+        </div>
+        <div id="login"><i style="color:white;">&#xe971;</i><span >王五</span><span id="login-button">&#xf05b;</span>
+        </div>
+        <div id="user-pop"style="display:none">
+            <div id="pop-triangle"></div>
+            <div id="pop-select">
+                <ul>
+                    <li id="userInformation" ><span>&#xe995;&#xe995;</span>个人资料</li>
+                    <li id="passWord"><span>&#xe995;</span>密码修改</li>
+                    <div id="pop-select-interval"></div>
+                    <li id="loginOut"><span>&#xe9b6;</span>退出</li>
+                </ul>
+            </div>
+        </div>
+        <div id="headDivTime">
+
+            <li id="nowWeek-Date">
+                <ul>
+                    <li id="nowWeek"></li><!--星期-->
+                    <li id="nowDate"></li><!--年月-->
+                </ul>
+            </li>
+            <li id="nowTime"></li><!--分秒-->
+        </div>
+
+    </div>
+    <div id="headDivBorderbottom"></div>
+
+    <div id="loginDiv" >
+
+        <div id="scrollNotice">
+
+            <div id="scrollDiv">
+                <div id="scrollBegin">
+
+                </div>
+                <div id="scrollEnd">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <div id="mainDiv2">
+        <!--左边那个黑边边，感觉并不是很好看-->
+        <div style="width:10px;height:100%;background-color:#f1f5f8;float:left"></div>
+        <div id="menuDiv">
+            <div id="indexPage">
+                <span  class="iconfont">&#xe900;</span>&nbsp&nbsp&nbsp&nbsp系统首页
+            </div>
+            <div id="subSystemPage">
+                <span class="iconfont">&#xf27c;</span>&nbsp&nbsp&nbsp&nbsp视图总览
+            </div>
+            <div id="menuName">
+                <span class="iconfont">&#xe998;</span>&nbsp&nbsp&nbsp&nbsp监测系统
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="pageSelect">
+                <li id="waterpressure" >
+                    <img src="images/public/fire_hydrant.png"/>
+                    <span>水压监控</span>
+                   
+                </li>
+
+                <li id="networkAlarm" >
+                    <img src="images/public/alarm%20(1).png"/>
+                    <span>联网报警</span>
+                    
+                </li>
+
+                <li id="fireInspection" >
+                    <img src="images/public/cruiser.png"/>
+                    <span>消防巡检</span>
+                   
+                </li>
+
+                <li id="facilityPatrol" >
+                    <img src="images/public/facilitiesInspection.png"/>
+                    <span>设施巡查</span>
+                  
+                </li>
+
+                <!-- <li id="videoMonitor" >
+                    <img src="images/public/videoMonitor.png"/>
+                    <span>视频监控</span>
+                    <div class="spanNum">16</div>
+                </li> -->
+            </div>
+            <div id="businessManagement">
+                <span class="iconfont">&#xe99b;</span>&nbsp&nbsp&nbsp&nbsp业务管理
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="functionSelect">
+               <!--  <li id="equipmentManagement" >
+                    <img src="images/public/equipmentManagement.png"/>
+                    <span>设备管理</span>
+                    <div class="spanNum">23</div>
+                </li> -->
+                <li id="abnormalManagement" >
+                    <img src="images/public/abnormalManagement.png"/>
+                    <span>异常报警管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="abnormalAnalysis" >
+                    <img src="images/public/abnormalAnalysis.png"/>
+                    <span>异常报警分析</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <!--<li id="alarmAnalysis" >
+                    <img src="images/public/alarmAnalysis.png"/>
+                    <span>报警分析</span>
+                    &lt;!&ndash;<div class="spanNum">23</div>&ndash;&gt;
+                </li>-->
+                <li id="maintenancePersonnel" >
+                    <img src="images/public/maintenancePersonnel.png"/>
+                    <span>维保人员</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="notificationDocument" >
+                    <img src="images/public/notificationDocument.png"/>
+                    <span>通知文档</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="policieAndRegulation" >
+                    <img src="images/public/policieAndRegulation.png"/>
+                    <span>政策法规</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="equipSelect" >
+                	<img src="images/public/facilitySet.png"/>
+                	<span> 设备查询</span>
+                </li>
+				<li id="dataSelect" >
+					<img src="images/public/dataSet.png"/>
+					<span> 基础资料</span>
+				</li>
+				<li id="monitor_building" >
+					<img src="images/public/monitorBuilding.png"/>
+					<span> 监测楼栋</span>
+				</li>
+				<li id="monitor_hostMachine" >
+					<img src="images/public/server.png"/>
+					<span> 监测主机</span>
+				</li>
+            </div>
+            <div id="menuapp">
+                <div id="appImage"></div>
+                <div id="appText">扫描二维码下载APP</div>
+            </div>
+        </div>
+
+        <div id="contentDiv">
+            <div id="indexTittle">
+                业务管理 > 监测楼栋
+            </div>
+            <div id="show">
+                <div id="mainContentDiv">
+                    <div class="middleDiv" id="A区">
+                        <div class="titleDiv">
+                            A区
+
+                        </div>
+                        <div class="campusDiv">
+                            <div class="campusWholeDiv">
+                                <div class="campusImageDiv" id="campusA"></div>
+                                <div class="campusInformationDiv">
+                                    A区楼栋数：&nbsp&nbsp<span></span>
+                                </div>
+                            </div>
+                            <div class="campusDetailDiv">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middleDiv" id="B区">
+                        <div class="titleDiv">
+                            B区
+
+                        </div>
+                        <div class="campusDiv">
+                            <div class="campusWholeDiv">
+                                <div class="campusImageDiv" id="campusB"></div>
+                                <div class="campusInformationDiv">
+                                    B区楼栋数：&nbsp&nbsp<span></span>
+                                </div>
+                            </div>
+                            <div class="campusDetailDiv"></div>
+                        </div>
+                    </div>
+                    <div class="middleDiv" id="C区">
+                        <div class="titleDiv">
+                            C区
+
+                        </div>
+                        <div class="campusDiv">
+                            <div class="campusWholeDiv">
+                                <div class="campusImageDiv" id="campusC"></div>
+                                <div class="campusInformationDiv">
+                                    C区楼栋数：&nbsp&nbsp<span></span>
+                                </div>
+                            </div>
+                            <div class="campusDetailDiv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerDiv" >
+        Copyright © By College of Automation of CQU, 2016
+    </div>
+</div>
+</body>
+
+</html>

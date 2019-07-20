@@ -1,0 +1,48 @@
+[genuitec-file-id="wc1-109"],[genuitec-lp-path="/Fire/WebRoot/xf8.29/css/module/page.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+#page_navigation ul li {
+	float: left;
+	height:100%;
+	line-height:2.37em;
+    font-size:1.8rem;
+}
+.icon-page{
+	cursor:pointer;
+	color:#B3B3B3;
+	padding-left:2.5%;/*10/400*/
+}
+.icon-page:hover{
+	color:#378D5C;
+}
+.page_span1{
+	padding-left:2.5%;
+	padding-right:1%;
+  /*   font-size:1.6rem; */
+}
+.page_span2{
+	padding-left:10px;
+    font-size:1.6rem;
+}
+.num_box {
+	width: 100%;
+	text-align: center;
+	border: 0.0625em solid #cccccc;
+	margin-top:3px;
+	padding-bottom:4%;
+    font-size:1.8rem;
+    height: 65%;
+}
+.input_box{
+	padding-left: 2px;
+	width:10%;
+	height: 65%;
+}
+#pageSummary{
+	height:100%;
+	margin-right: 10px;
+	float:right;
+	line-height: 2.5;
+	font-size: 1.8rem;
+}

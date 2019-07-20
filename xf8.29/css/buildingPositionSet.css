@@ -1,0 +1,143 @@
+[genuitec-file-id="wc1-102"],[genuitec-lp-path="/Fire/WebRoot/xf8.29/css/buildingPositionSet.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+#campusPicture{
+	width:1693px;
+	height:874px;
+	float:left;
+	margin-top:10px;
+	border:1px solid #bababa;
+	background-image: url("../images/MAP/A区.png");
+	background-size:1693px 874px;
+	position:relative;
+}
+#campus{
+	width: 296px;
+	/*height:152px;*/
+	float:left;
+	margin:10px 0 0 10px;
+	background-color: #f4f4f4;
+	border:1px solid #bababa;
+	border-radius:4px;
+}
+#campusSelect{
+	width: 292px;
+	height: 30px;
+	float:left;
+	border:2px solid #bababa;
+	border-radius:4px;
+	background-color: #65a51c;
+}
+#campusSelect li{
+	float:left;
+	text-align:center;
+	width: 96px;
+	height: 30px;
+	line-height:30px;
+	font-size:20px;
+	/*background-color: #65a51c;*/
+	color: #ffffff;
+	border-radius:2px;
+}
+#campusSelect li:hover{
+	background-color: #3BA552;
+	cursor: pointer;
+}
+.campusName{
+	border-right:2px solid #bababa;
+}
+.campusSelectChoose{
+	background-color: #036726;
+}
+#campusInformation{
+	width: 296px;
+	/*height: 105px;*/
+	float:left;
+	font-size:17px;
+	padding:5px 0 5px 0;
+	/*overflow-y: auto;
+	overflow-x: inherit;*/
+}
+.campusInformationDetail{
+	margin-left:10px;
+	width: 138px;
+	height: 35px;
+	float:left;
+	line-height:35px;
+}
+
+.buildingPoint{
+	position:absolute;
+	cursor: move;
+	display:block;
+	width:32px;
+}
+#newBuilding{
+	width:100%;
+	height: 100%;
+	border-collapse: collapse;
+	/*overflow-y: auto;
+	overflow-x: hidden;*/
+}
+#newBuilding td, #newBuilding th {
+	box-sizing: border-box;
+	border-bottom: 1px #d5dee6 solid;
+	text-align:center;
+}
+#newBuilding th{
+	color: #3e6985;
+	height: 25px;
+	font-size:18px;
+	background: #e5f6ee;
+}
+#newBuilding td{
+	height:25px;
+	/* vertical-align: middle;*/
+	font-size: 16px;
+	color: #3e6985;
+}
+#newBuilding tr:nth-child(even){
+	background-color: #f4f4f4;
+}
+#newBuilding tr:nth-child(odd){
+	background-color: #fdfdfd;
+}
+#newBuilding th:nth-child(1){
+	width:70%;
+}
+#newBuilding th:nth-child(2){
+	width:30%;
+}
+#newBuilding td:nth-child(1){
+	width:60%;
+}
+#newBuilding td:nth-child(2){
+	width:40%;
+}
+.newBuildingPoint{
+	cursor: move;
+	display:block;
+	width:21px;
+	padding-left: 25px;
+}
+
+#allImageFalse{
+	font-size:1.8rem;
+	height:72px;
+	z-index: 999;
+}
+#imageFalse{
+	vertical-align: middle;
+	padding-top:20px;
+	padding-left:64px;
+	float:left;
+}
+#imgFalseTest{
+	font-size:25px;
+	color: #878787;
+	vertical-align: middle;
+	margin-left:12px;
+	padding-top:24px;
+	float: left;
+}

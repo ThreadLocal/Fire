@@ -1,0 +1,245 @@
+[genuitec-file-id="wc1-57"],[genuitec-lp-path="/Fire/WebRoot/xf5.19 - ¸±±¾/css/abnormalAnalysis.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+#abnormalAnalysisDiv{
+    width:1585px;
+    float:left;
+}
+#abnormalAlarmSwitch{
+    width:100px;
+    float:left;
+    height: 27px;
+    border-radius: 20px;
+    /*border: 2px solid #2a6cb4;*/
+    text-align: center;
+    font-size: 16px;
+    margin:5px 0;
+    line-height: 27px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #296bb4;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#subsystemSelectDiv{
+    width:100%;
+    height:50px;
+    /*margin-top:10px;*/
+    font-size:18px;
+    line-height:50px;
+    /* color: #2662E3;*/
+    /* font-weight: 700;*/
+}
+#systemSele{
+    display: block;
+    float: left;
+    /*height: 60px;*/
+}
+#systemSele li{
+    float:left;
+    display: inline-block;
+    margin: 8px 10px 8px 0;
+    /*height: 60px;*/
+    font-size: 16px;
+    line-height: 16px;
+}
+#systemSubmit{
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#systemWarn{
+    float:left;
+    margin-right: 15px;
+    font-size:14px;
+    line-height:50px;
+    color:#DD5044;
+}
+#abnormalInformationDiv{
+    width:100%;
+    height:132px;
+}
+.abnormalModule{
+    width:414.25px;
+    height:130px;
+    border:1px solid #bababa;
+    float:left;
+}
+.module1{
+    margin-right:10px;
+}
+#accumulateAbnormal{
+    background-color: #7733aa;
+}
+#yearAbnormal{
+    background-color: #34689a;
+}
+#monthAbnormal{
+    background-color: #349a34;
+}
+#dayAbnormal{
+    background-color: #a24b20;
+}
+.moduleTitle{
+    width:100%;
+    height:70px;
+    line-height:70px;
+    text-align: center;
+    font-size:26px;
+    color:#ffffff;
+}
+#total_total,#year_total,#month_total,#day_total {
+    padding-left: 80px;
+    /*font-size:26px;*/
+}
+.moduleContent{
+    width:100%;
+    height:60px;
+    line-height:60px;
+}
+.contentDetail{
+    width:33.33%;
+    height:60px;
+    line-height:60px;
+    float:left;
+    text-align: center;
+    font-size: 18px;
+    color:#FFFFFF;
+}
+#abnormalTrendDiv,#abnormalBuildingDiv{
+    width:1693px;
+    height:340px;
+    border:1px solid #bababa;
+    margin-top:10px;
+}
+.selectResult{
+    cursor: pointer;
+}
+.title{
+    width: 1678px;
+    height: 40px;
+    float: left;
+    color: #707070;
+    padding-left: 15px;
+    border-bottom: 1px solid #bababa;
+    background: linear-gradient(to bottom, #f6f6f6,#e4e4e4);
+    font-size: 18px;
+    line-height: 41px;
+}
+.searchDiv{
+    float:left;
+    width:100%;
+    height:40px;
+}
+.searchDiv ul {
+    width: 100%;
+    height:30px;
+    line-height: 30px;
+    padding: 5px 0;
+    font-size: 1.6rem;
+    float: left;
+}
+.searchDiv ul li {
+    height: 100%;
+    float: left;
+    /* text-align: center; */
+}
+.search-title {
+    width: 30px;
+    height: 20px;
+    /*margin-left: 15px;*/
+    font-size: 14px;
+    /*color: #fff;*/
+    line-height: 20px;
+    text-align: center;
+    margin:5px 5px;
+    /*border-radius: 2px;
+    background-color: #056828;*/
+}
+.search-title:hover {
+    /*background-color: #66a61e;*/
+    cursor: pointer;
+}
+.search-Test{
+    margin-left: 15px;
+}
+.Detail-search{
+    margin-left:5px;
+}
+.selectHandle {
+    cursor: pointer;
+}
+#selectbuilding, #selectsquare,.selectHandle {
+    border: 1px solid #E0E0E0;
+    height: 28px;
+}
+.timeBox {
+    width: 41.6666%;
+    border: 1px solid #E0E0E0;
+    height: 28px;
+    line-height: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.sureButtum{
+    width: 50px;
+    height: 20px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #056828;
+}
+.sureButtum:hover {
+    background-color: #66a61e;
+    /*  background-color: #47eda9;*/
+    cursor: pointer;
+}
+.buildingTimeSelectSecond,.trendTimeSelectSecond{
+    display:none;
+}
+.chartDiv{
+    width:100%;
+    height:259px;
+    float:left;
+}
+.trendChartBarDiv{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.analysisChartBarDiv{
+    position:relative;
+    width:80%;
+    height:100%;
+}
+
+.analysisChartPieDiv{
+    position:relative;
+    left:80%;
+    width:20%;
+    height:100%;
+    top:-100%;
+}
+
+
+#allImageFalse{
+    position:absolute;
+    left:26%;
+    top:35%;/**/
+    font-size:1.8rem;
+    height:10%;
+
+}
+#imageFalse{
+    vertical-align: middle;
+}
+#imgFalseTest{
+    font-size:25px;
+    color: #878787;
+    vertical-align: middle;
+    margin-left:5px;
+}

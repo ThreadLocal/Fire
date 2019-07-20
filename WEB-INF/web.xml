@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+ <servlet>
+    <description>系统初始化</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitialServlet</servlet-name>
+    <servlet-class>com.fire.servlet.InitialServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+ </servlet>
+  <servlet>
+    <description>web servlet</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DispatchServlet</servlet-name>
+    <servlet-class>com.fire.servlet.DispatchServlet</servlet-class>
+ </servlet>
+   <servlet>
+    <description>app servlet</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AppDispatchServlet</servlet-name>
+    <servlet-class>com.fire.servlet.AppDispatchServlet</servlet-class>
+ </servlet>
+    <servlet>
+    <description>fileupload servlet</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>com.fire.servlet.FileUploadServlet</servlet-class>
+ </servlet>
+
+ 
+ 
+ 
+ <servlet-mapping>
+    <servlet-name>InitialServlet</servlet-name>
+    <url-pattern>/servlet/InitialServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DispatchServlet</servlet-name>
+    <url-pattern>/servlet/DispatchServlet</url-pattern>
+ </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AppDispatchServlet</servlet-name>
+    <url-pattern>/servlet/AppDispatchServlet</url-pattern>
+ </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/servlet/FileUploadServlet</url-pattern>
+ </servlet-mapping>
+ </web-app>

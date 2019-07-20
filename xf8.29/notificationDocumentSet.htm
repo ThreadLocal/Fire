@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--禁止屏幕缩放-->
+    <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>通知文档管理</title>
+    <link rel="stylesheet" href="css/public/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/public/navigation.css" type="text/css" />
+     <link rel="stylesheet" href="css/module/page.css" type="text/css" />
+    <link rel="stylesheet" href="css/notificationDocumentSet.css" type="text/css" />
+
+
+    <script type="text/javascript" src="js/public/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/public/jquery-ui-1.10.3.custom.js"></script>
+    <script type="text/javascript" src="js/public/default.js"></script>
+    <script type="text/javascript" src="js/notificationDocumentSet.js"></script>
+
+
+
+<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"51974",secure:"51983"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+
+<body id="body" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-125" data-genuitec-path="/Fire/WebRoot/xf8.29/notificationDocumentSet.htm">
+<div id="mainDiv"  data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-125" data-genuitec-path="/Fire/WebRoot/xf8.29/notificationDocumentSet.htm">
+    <div id="headDiv">
+        <div id="headDivLogo">
+        </div>
+        <div id="headDivTitle">
+            智慧消防安全云服务系统管理平台
+        </div>
+        <div id="login"><i style="color:white;">&#xe971;</i><span >王五</span><span id="login-button">&#xf05b;</span>
+        </div>
+        <div id="user-pop"style="display:none">
+            <div id="pop-triangle"></div>
+            <div id="pop-select">
+                <ul>
+                    <li id="userInformation" ><span>&#xe995;</span>个人资料</li>
+                    <li id="passWord"><span>&#xe971;</span>密码修改</li>
+                    <div id="pop-select-interval"></div>
+                    <li id="loginOut"><span>&#xe9b6;</span>退出</li>
+                </ul>
+            </div>
+        </div>
+        <div id="headDivTime">
+
+            <li id="nowWeek-Date">
+                <ul>
+                    <li id="nowWeek"></li><!--星期-->
+                    <li id="nowDate"></li><!--年月-->
+                </ul>
+            </li>
+            <li id="nowTime"></li><!--分秒-->
+        </div>
+
+    </div>
+    <div id="headDivBorderbottom"></div>
+
+    <div id="loginDiv" >
+        <!--<div id="loginDivInfo">
+            <span id="linkIndex" ></span>
+        </div>-->
+        <div id="scrollNotice">
+            <!--<div id="announcementDiv">
+                通知公告
+            </div>-->
+            <div id="scrollDiv">
+                <div id="scrollBegin">
+
+
+
+                </div>
+                <div id="scrollEnd">
+
+                </div>
+            </div>
+        </div>
+        <!--<div id="functionMenuDiv">
+            功能菜单
+        </div>
+        <ul id="action">
+            <li><a href="laws.htm"><span class="iconfont">&#xf02d;</span>异常/报警管理</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf031;</span>设备管理</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xe971;</span>维保人员</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf035;</span>通知文档</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf011;</span>政策法规</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf0d3;</span>设备总览</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf097;</span>设施巡查记录</a> </li>
+        </ul>-->
+    </div>
+
+    <div id="mainDiv2">
+        <!--左边那个黑边边，感觉并不是很好看-->
+        <div style="width:10px;height:100%;background-color:#f1f5f8;float:left"></div>
+        <div id="menuDiv">
+            
+            <div id="menuName" style="background-color: rgb(34, 78, 156);">
+                <span class="iconfont">&#xe9bb;</span>&nbsp&nbsp&nbsp&nbsp系统管理
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="pageSelect">
+                               <li id="facilityPatrolSet" >
+                    <img src="images/public/facilitiesInspection.png"/>
+                    <span>设施巡查管理</span>
+                    <!--      <div class="spanNum">25</div>-->
+                </li>
+                <li id="maintenancePersonnelSet" >
+                    <img src="images/public/maintenancePersonnelSet.png"/>
+                    <span>维保人员管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <!-- <li id="peoplelSet" >
+                    <img src="images/public/peoplelSet.png"/>
+                    <span>用户管理</span>
+                    <div class="spanNum">23</div>
+                </li> -->
+                <li id="notificationDocumentSet" >
+                    <img src="images/public/notificationDocument.png"/>
+                    <span>通知文档管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="policieAndRegulationSet" >
+                    <img src="images/public/policieAndRegulation.png"/>
+                    <span>政策法规管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="facilitySet" >
+                    <img src="images/public/facilitySet.png"/>
+                    <span>设备管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <!-- <li id="videoMonitor" >
+                    <img src="images/public/videoMonitor.png"/>
+                    <span>视频监控</span>
+                    <div class="spanNum">16</div>
+                </li> -->
+                <li id="dataSet" >
+                    <img src="images/public/dataSet.png"/>
+                    <span>基础资料管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="buildingManage" >
+                    <img src="images/public/buildingManage.png"/>
+                    <span>楼栋信息管理</span>
+                   
+                </li>
+                <li id="buildingPointManage" >
+                    <img src="images/public/buildingPointManage.png"/>
+                    <span>楼层监测点管理</span>
+                </li>
+                <li id="buildingPositionSet" >
+                    <img src="images/public/map_location.png"/>
+                    <span>楼栋位置管理</span>
+                </li>
+            </div>
+
+            <div id="menuapp">
+                <div id="appImage"></div>
+                <div id="appText">扫描二维码下载APP</div>
+            </div>
+        </div>
+        <!--
+            /* 红色：E51400 绿色：339933 蓝色：1BA1E2 橙色：F09609 草绿：8CBF26 湖蓝：00ABA9 洋红：FF0097 粉色：E671B8 棕色：996600 紫色：A200FF*/
+        -->
+        <div id="contentDiv">
+            <div id="indexTittle">
+                系统管理 > 通知文档管理
+            </div>
+           <!-- <div id="campusTitle">
+
+            </div>-->
+            <div id="show">
+                <div id="mainContentLeftDiv">
+                    <div id="contentDetailDiv">
+                        <div class="noticeTitle">
+                            最新通知
+                            <div id="searchDiv">
+                                		<div id="search">
+                                    		<input id="searchInput" class="searchInput" placeholder="搜索通知公告" type="text" />
+                                    		<span id="searchReset" class="iconfont searchReset">&#xf081;</span>
+                                		</div>
+                                		<span id="searchSubmit" class="iconfont searchSubmit">&#xe986;</span>
+                            		</div>
+                            <div id="manageButton">
+                            	<ul>
+                            		<li id="inputDelete" class="uploadbutton">&nbsp&nbsp删除<span class="iconfont">&#xe9ac;</span></li>
+                            		<li id="upload" class="uploadbutton uploadbutton">&nbsp&nbsp新增<span class="iconfont">&#xea0a;</span></li>
+                            	</ul>
+                                <!-- <form>
+                                    <input  id='inputDelete'type="button" value="删除">
+                                    <input  type="button" id="upload" value="上传">
+                                </form> -->
+                            </div>
+                        </div>
+                        <div id="detailNotice">
+                            <div class="views-row views-row-1 views-row-even views-page-row">
+                                <div class="views-field views-field-title">         <span class="field-content views-title"></span>   </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-2 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">         <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-3 views-row-odd views-page-row">
+
+                                <div class="views-field views-field-title">         <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-4 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-5 views-row-odd views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-6 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-7 views-row-odd views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-8 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-9 views-row-odd views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-10 views-row-even views-page-row">
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-11 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-12 views-row-odd views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-13 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-14 views-row-odd views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-15 views-row-even views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div class="views-row views-row-16 views-row-even views-row-last views-page-row">
+
+                                <div class="views-field views-field-title">        <span class="field-content views-title"></span>  </div>
+                                <div class="views-field views-field-changed">        <span class="field-content views-updated-date"></span>  </div>  </div>
+                            <div id="page_navigation"><ul></ul>
+                              <div id="pageSummary">
+                                                                              共&nbsp<span id="totalNum"></span>&nbsp条数据
+                    </div></div>
+                        </div>
+                    </div>
+                </div>
+      </div>
+        </div>
+
+
+    </div>
+    <div id="footerDiv" >
+        Copyright © By College of Automation of CQU, 2016
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

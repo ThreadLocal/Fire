@@ -1,0 +1,512 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>设施巡查</title>
+	<link rel="stylesheet" href="css/public/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/public/navigation.css" type="text/css" />
+	<link rel="stylesheet" href="css/module/page.css" type="text/css" />
+	<link rel="stylesheet" href="css/facilityPatrol.css" type="text/css" />
+
+	<script type="text/javascript" src="js/public/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/public/default.js"></script>
+	<script type="text/javascript" src="js/patrolSearch.js"></script>
+	<script type="text/javascript" src="js/facilityPatrol.js"></script>
+
+	<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gDy7O8ofRdPeUc1dDlPD4zK5xiQpOMql"></script>-->
+
+<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"51974",secure:"51983"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+
+
+<body id="body" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-42" data-genuitec-path="/Fire/WebRoot/xf5.19/facilityPatrol.htm">
+<div id="mainDiv"  data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-42" data-genuitec-path="/Fire/WebRoot/xf5.19/facilityPatrol.htm">
+	<div id="headDiv">
+		<div id="headDivLogo" >
+		</div>
+		<div id="headDivTitle">
+			智慧消防安全云服务平台
+		</div>
+		<div id="beforeLogin"> 
+        <a href="../xf8.29/login.htm" style='text-decoration:underline'>管理系统入口</a>
+        </div>
+		<div id="login"><i style="color:white;">&#xe971;</i><span >王五</span><span id="login-button">&#xf05b;</span>
+		</div>
+		<div id="user-pop"style="display:none">
+			<div id="pop-triangle"></div>
+			<div id="pop-select">
+				<ul>
+					<li id="userInformation" ><span>&#xe995;</span>个人资料</li>
+					<li id="passwordChange"><span>&#xe971;</span>密码修改</li>
+					<div id="pop-select-interval"></div>
+					<li id="loginOut"><span>&#xe9b6;</span>退出</li>
+				</ul>
+			</div>
+		</div>
+		<div id="headDivTime">
+
+			<li id="nowWeek-Date">
+				<ul>
+					<li id="nowWeek"></li><!--星期-->
+					<li id="nowDate"></li><!--年月-->
+				</ul>
+			</li>
+			<li id="nowTime"></li><!--分秒-->
+		</div>
+
+	</div>
+	<div id="headDivBorderbottom"></div>
+
+	<div id="loginDiv" >
+		<!--<div id="loginDivInfo">
+			<span id="linkIndex" ></span>
+		</div>-->
+		<div id="scrollNotice">
+			<!--<div id="announcementDiv">
+				通知公告
+			</div>-->
+			<div id="scrollDiv">
+				<div id="scrollBegin">
+		
+
+				</div>
+				<div id="scrollEnd">
+
+				</div>
+			</div>
+		</div>
+		<!--<div id="functionMenuDiv">
+			功能菜单
+		</div>
+		<ul id="action">
+			<li><a href="laws.htm"><span class="iconfont">&#xf02d;</span>异常/报警管理</a> </li>
+			<li><a href="#"><span class="iconfont ">&#xf031;</span>设备管理</a> </li>
+			<li><a href="#"><span class="iconfont ">&#xe971;</span>维保人员</a> </li>
+			<li><a href="#"><span class="iconfont ">&#xf035;</span>通知文档</a> </li>
+			<li><a href="#"><span class="iconfont ">&#xf011;</span>政策法规</a> </li>
+			<li><a href="#"><span class="iconfont ">&#xf0d3;</span>设备总览</a> </li>
+			<li><a href="#"><span class="iconfont ">&#xf097;</span>设施巡查记录</a> </li>
+		</ul>-->
+	</div>
+
+	<div id="mainDiv2">
+		<!--左边那个黑边边，感觉并不是很好看-->
+		<div style="width:10px;height:100%;background-color:#f1f5f8;float:left"></div>
+		<div id="menuDiv">
+            <div id="indexPage">
+                <span  class="iconfont">&#xe900;</span>&nbsp&nbsp&nbsp&nbsp系统首页
+            </div>
+            <div id="subSystemPage">
+                <span class="iconfont">&#xf27c;</span>&nbsp&nbsp&nbsp&nbsp视图总览
+            </div>
+            <div id="menuName">
+                <span class="iconfont">&#xe998;</span>&nbsp&nbsp&nbsp&nbsp监测系统
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="pageSelect">
+                <li id="waterpressure" >
+                    <img src="images/public/fire_hydrant.png"/>
+                    <span>水压监控</span>
+                    
+                </li>
+
+                <li id="networkAlarm" >
+                    <img src="images/public/alarm%20(1).png"/>
+                    <span>联网报警</span>
+                    
+                </li>
+
+                <li id="fireInspection" >
+                    <img src="images/public/cruiser.png"/>
+                    <span>消防巡检</span>
+                    
+                </li>
+
+                <li id="facilityPatrol" >
+                    <img src="images/public/facilitiesInspection.png"/>
+                    <span>设施巡查</span>
+                    
+                </li>
+
+                <!-- <li id="videoMonitor" >
+                    <img src="images/public/videoMonitor.png"/>
+                    <span>视频监控</span>
+                    <div class="spanNum">16</div>
+                </li> -->
+            </div>
+            <div id="businessManagement">
+                <span class="iconfont">&#xe99b;</span>&nbsp&nbsp&nbsp&nbsp业务管理
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="functionSelect">
+               <!--  <li id="equipmentManagement" >
+                    <img src="images/public/equipmentManagement.png"/>
+                    <span>设备管理</span>
+                    <div class="spanNum">23</div>
+                </li> -->
+                <li id="abnormalManagement" >
+                    <img src="images/public/abnormalManagement.png"/>
+                    <span>异常报警管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="abnormalAnalysis" >
+                    <img src="images/public/abnormalAnalysis.png"/>
+                    <span>异常报警分析</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <!--<li id="alarmAnalysis" >
+                    <img src="images/public/alarmAnalysis.png"/>
+                    <span>报警分析</span>
+                    &lt;!&ndash;<div class="spanNum">23</div>&ndash;&gt;
+                </li>-->
+                <li id="maintenancePersonnel" >
+                    <img src="images/public/maintenancePersonnel.png"/>
+                    <span>维保人员</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="notificationDocument" >
+                    <img src="images/public/notificationDocument.png"/>
+                    <span>通知文档</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="policieAndRegulation" >
+                    <img src="images/public/policieAndRegulation.png"/>
+                    <span>政策法规</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="equipSelect" >
+                	<img src="images/public/facilitySet.png"/>
+                	<span> 设备查询</span>
+                </li>
+				<li id="dataSelect" >
+					<img src="images/public/dataSet.png"/>
+					<span> 基础资料</span>
+				</li>
+				<li id="monitor_building" >
+					<img src="images/public/monitorBuilding.png"/>
+					<span> 监测楼栋</span>
+				</li>
+				<li id="monitor_hostMachine" >
+					<img src="images/public/server.png"/>
+					<span> 监测主机</span>
+				</li>
+            </div>
+            <div id="menuapp">
+                <div id="appImage"></div>
+                <div id="appText">扫描二维码下载APP</div>
+            </div>
+        </div>
+		<!--
+            /* 红色：E51400 绿色：339933 蓝色：1BA1E2 橙色：F09609 草绿：8CBF26 湖蓝：00ABA9 洋红：FF0097 粉色：E671B8 棕色：996600 紫色：A200FF*/
+        -->
+		<div id="contentDiv">
+			<div id="indexTittle">
+				<span>监测系统 > 设施巡查</span>
+				<span id="planName"></span>
+				<span id="returnButton">巡查计划总览</span>
+			</div>
+
+			<div id="show">
+				<div class="patrol">
+					<div class="patrolTitle">现有巡查计划
+
+					</div>
+					<div class="patrolContent">
+						<div id="patrolNowDiv" style="width:100%;height:350px;position:relative" >
+							<table id="patrolNowTable" class="table table-striped standTable">
+							</table>
+						</div>
+						<div id="page_navigation1" class="page_navigation">
+							<ul>
+                                <li class="iconfont icon-page firstPage" id="patrolNowTable_firstPage" title="首页" planState="未完成" tableid="patrolNowTable">&#xea1a;</li>
+                                <li class="iconfont icon-page prePage" id="patrolNowTable_prePage" title="上一页" planState="未完成" tableid="patrolNowTable">&#xea44;</li>
+                                <li class="page_span1">第</li>
+                                <li class="input_box"><input id="patrolNowTable_nowPage" class="num_box nowPage" type="text" planState="未完成" tableid="patrolNowTable"></li>
+                                <li class="page_span2">/<span id="patrolNowTable_totalPage"></span>&nbsp页</li>
+                                <li class="iconfont icon-page nextPage" id="patrolNowTable_nextPage" title="下一页" planState="未完成" tableid="patrolNowTable">&#xea42;</li>
+                                <li class="iconfont icon-page lastPage" id="patrolNowTable_lastPage" title="尾页" planState="未完成" tableid="patrolNowTable">&#xea1b;</li>
+                            </ul>
+							<div id="patrolNowTable_pageSummary" class="pageSummary">
+								共&nbsp<span id="patrolNowTable_totalNum"></span>&nbsp条数据
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="patrol">
+					<div class="patrolTitle">历史巡查计划</div>
+					<div class="patrolContent">
+						<div id="patrolHistroyDiv" style="width:100%;height:350px;position:relative" >
+							<table id="patrolHistroyTable" class="table table-striped standTable">
+							</table>
+						</div>
+						<div id="page_navigation2" class="page_navigation">
+							<ul>
+                                <li class="iconfont icon-page firstPage" id="patrolHistroyTable_firstPage" title="首页" planState="已完成" tableid="patrolHistroyTable">&#xea1a;</li>
+                                <li class="iconfont icon-page prePage" id="patrolHistroyTable_prePage" title="上一页" planState="已完成" tableid="patrolHistroyTable">&#xea44;</li>
+                                <li class="page_span1">第</li>
+                                <li class="input_box"><input id="patrolHistroyTable_nowPage" class="num_box nowPage" type="text" planState="已完成" tableid="patrolHistroyTable"></li>
+                                <li class="page_span2">/<span id="patrolHistroyTable_totalPage"></span>&nbsp页</li>
+                                <li class="iconfont icon-page nextPage" id="patrolHistroyTable_nextPage" title="下一页" planState="已完成" tableid="patrolHistroyTable">&#xea42;</li>
+                                <li class="iconfont icon-page lastPage" id="patrolHistroyTable_lastPage" title="尾页" planState="已完成" tableid="patrolHistroyTable">&#xea1b;</li>
+                            </ul>
+							<div id="patrolHistroyTable_pageSummary" class="pageSummary">
+								共&nbsp<span id="patrolHistroyTable_totalNum"></span>&nbsp条数据
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="showDetail">
+				<div id="facilityTop">
+					<div id="facilityAll">
+					
+						<div id="facilityPlan">
+							<span id="name" style="margin-left:10px;">巡查计划:</span>
+							<span id="time">2017-4-10</span>
+						</div>
+						<div class="facilityChart">
+							<div id="ChartWord" style="margin-left:10px;">时间进度:</div>
+							<div class="progressBar blue stripes">
+								<span id="timePercent"></span>
+							</div>
+						</div>
+						<div class="facilityChart">
+							<div id="patrolSpeed" style="margin-left:10px;">巡查进度:</div>
+							<div class="progressBar blue stripes">
+								<span id="facilityPercent"></span>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div id="facilityDetailDiv">
+						<div id="alreadyPatrolDiv" class="imformationDiv firstLineDiv" >
+							
+							<div id="alreadyPatrolTitle" class="titleDiv">
+								已巡查
+							</div>
+							<div id="alreadyPatrolDta" class="dataDiv">
+								
+							</div>
+
+						</div>
+						<div id="nopPatrolDiv" class="imformationDiv firstLineDiv">
+							<div id="noPatrolIcon" class="iconDiv" style="background-image: url(images/facilityPatrol/nopPatrol.png);">
+
+							</div>
+							<div id="noPatrolTitle" class="titleDiv">
+								未巡查
+							</div>
+							<div id="noPatrolDta" class="dataDiv">
+								
+							</div>
+						</div>
+						<div id="normalDiv" class="imformationDiv ">
+							<div id="normalIcon" class="iconDiv" style="background-image: url(images/facilityPatrol/normal.png);">
+
+							</div>
+							<div id="normalTitle" class="titleDiv">
+								正常
+							</div>
+							<div id="normalDta" class="dataDiv">
+								
+							</div>
+						</div>
+						<div id="abnormalDiv" class="imformationDiv ">
+							<div id="abnormalIcon" class="iconDiv" style="background-image: url(images/facilityPatrol/abnormal.png);">
+
+							</div>
+							<div id="abnormalTitle" class="titleDiv">
+								异常
+							</div>
+							<div id="abnormalDta" class="dataDiv">
+								
+							</div>
+						</div>
+
+					</div>
+	
+				
+				</div>
+				<div id="facilityCenter">
+					<div id="facilityLeftTable">
+						<div id="leftTableTitle">巡查信息</div>
+						<div id="searchAreaAll">
+							<div id="searchTitle">
+								<ul>
+									<li>
+										<div class="circle"></div>
+									</li>
+									<li>
+										<div class="circle"></div>
+									</li>
+									<li>
+										<div class="circle"></div>
+									</li>
+									<li >
+										<div class="circle"></div>
+									</li>
+								</ul>
+							</div>
+							<div id="TableSearch">
+								<ul>
+									<li id="selectArea" class="selectTable">
+										<span >校区：</span>
+										<select id="areaCampus"class="selectResult">
+											<option value="0">校区选择</option>
+
+										</select>
+										<span  style="margin-left: 20px;">楼栋：</span>
+										<select id="areaBuilding" class="selectResult">
+											<option  value="0">楼栋选择&nbsp;&nbsp;&nbsp;</option>
+
+										</select>
+										<span style="margin-left: 20px;">楼层：</span>
+										<select id="areaStair" class="selectResult">
+											<option  value="0">楼层选择</option>
+
+										</select>
+									</li>
+									<li id="selectWhether" class="selectTable selectRadio">
+										<span >巡查状态：</span>
+										<a id="hadPatrol" value="isPatro" attr="1">已巡查</a>
+										<a id="notPatrol" value="isPatro" attr="0">未巡查</a>
+									</li>
+									<li id="selectState" class="selectTable selectRadio">
+										<span >巡查结果：</span>
+										<a id="hadNormal" value="patrolIsNormal" attr="1">正常</a>
+										<a id="notNormal" value="patrolIsNormal" attr="0">异常</a>
+									</li>
+									<li id="selectType" class="selectTable selectRadio" style="border-bottom:none">
+										<span >设备类型：</span>
+										<a id="fireplug" value="fireFacilityType" attr="1">消防栓</a>
+										<a id="fireExtinguisher" value="fireFacilityType" attr="0">灭火器</a>
+									</li>
+								</ul>
+							</div>
+							<div id="searchResult">
+								<!--	<a id="searchResultOne" class="resultList" title="A区">A区 <span class="iconfont">&#xf081;</span> </a>
+                                    <a id="searchResultTwo" class="resultList" title="第五教学楼">第五教学楼 <span class="iconfont">&#xf081;</span> </a>
+                                    <a id="searchResultThree" class="resultList" title="正常">正常 <span class="iconfont">&#xf081;</span> </a>-->
+								
+								<div  id="searchSubmit" class="searchButton">
+									提交
+								</div>
+								<div  id="searchRestart" class="searchButton">
+									重置
+								</div>
+								
+								
+							</div>
+						</div>
+						<div id="facilityTableContent"  >
+							<table class="table table-striped standTable">
+								<tbody id="tableTbody">
+								</tbody>
+							</table>
+
+
+						</div>
+						<div id="page_navigation">
+							<ul>
+								<li class="iconfont icon-page" id="first_page" title="首页">&#xea1a;</li>
+								<li class="iconfont icon-page" id="previous_page" title="上一页">&#xea44;</li>
+								<li class="page_span1">第</li>
+								<li class="iconfont input_box">
+								<input id="search_nowPage" class="num_box" type="text"></li>
+								<li class="page_span2">/&nbsp;<span id="totalPage"></span></>页</li>
+								<li class="iconfont icon-page" id="next_page" title="下一页">&#xea42;</li>
+								<li class="iconfont icon-page" id="last_page" title="尾页">&#xea1b;</li>
+							</ul>
+						</div>
+					</div>
+					<div id="facilityRightPicture">
+						<div id="rightPictureTitle">
+							已巡查结果
+						</div>
+						<div id="detailContent" style="display: none">
+							<div id="rightPictureInformation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div id="pictureTable">
+								<div id="pictureTableLeft" class="pictureTableStyle">
+									<table id="tableLeft" class="tableInformation">
+										<tbody>
+										<tr class="tableHeader">
+											<th>检查项目</th>
+											<th>状态</th></tr>
+										<tr class="tableContent">
+											<td></td><td class="iconfont"></td>
+										</tr >
+										<tr class="tableContent">
+											<td></td><td class="iconfont"></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont "></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont" ></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont "></td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div id="pictureTableRight" class="pictureTableStyle">
+									<table id="tableRight"  class="tableInformation">
+										<tbody>
+										<tr class="tableHeader">
+											<th>检查项目</th>
+											<th>状态</th></tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont"></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont"></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont"></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont"></td>
+										</tr>
+										<tr  class="tableContent">
+											<td></td><td class="iconfont" ></td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div id="pictureTableNote">
+								备注:
+								<span></span>
+							</div>
+							<div id="patrolPicture">
+
+
+							</div>
+						</div>
+						<div id="noPatrol" >
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footerDiv" >
+		Copyright © By College of Automation of CQU, 2016
+	</div>
+
+
+</div>
+
+
+</body>
+
+</html>

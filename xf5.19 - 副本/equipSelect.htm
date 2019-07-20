@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>设备查询</title>
+    <link rel="stylesheet" href="css/public/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/public/navigation.css" type="text/css" />
+    <link rel="stylesheet" href="css/module/page.css" type="text/css" />
+    <link rel="stylesheet" href="css/equipSelect.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/public/jquery-ui-1.10.3.custom.css" />
+   
+    <script type="text/javascript" src="js/public/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/public/jquery-ui-1.10.3.custom.js"></script>
+    <script type="text/javascript" src="js/public/default.js"></script>
+    <script type="text/javascript" src="js/abnormalOption.js"></script>
+    <script type="text/javascript" src="js/equipSelect.js"></script>
+  
+
+<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"51974",secure:"51983"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+
+<body id="body" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-83" data-genuitec-path="/Fire/WebRoot/xf5.19 - 副本/equipSelect.htm">
+<div id="mainDiv"  data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-83" data-genuitec-path="/Fire/WebRoot/xf5.19 - 副本/equipSelect.htm">
+    <div id="headDiv">
+        <div id="headDivLogo">
+        </div>
+        <div id="headDivTitle">
+            智慧消防安全云服务平台
+        </div>
+        <div id="beforeLogin"> 
+        <a href="../xf8.29/login.htm" style='text-decoration:underline'>管理系统入口</a>
+        </div>
+        <div id="login"><i style="color:white;">&#xe971;</i><span >王五</span><span id="login-button">&#xf05b;</span>
+        </div>
+        <div id="user-pop"style="display:none">
+            <div id="pop-triangle"></div>
+            <div id="pop-select">
+                <ul>
+                    <li id="userInformation" ><span>&#xe995;</span>个人资料</li>
+                    <li id="passwordChange"><span>&#xe971;</span>密码修改</li>
+                    <div id="pop-select-interval"></div>
+                    <li id="loginOut"><span>&#xe9b6;</span>退出</li>
+                </ul>
+            </div>
+        </div>
+        <div id="headDivTime">
+
+            <li id="nowWeek-Date">
+                <ul>
+                    <li id="nowWeek"></li><!--星期-->
+                    <li id="nowDate"></li><!--年月-->
+                </ul>
+            </li>
+            <li id="nowTime"></li><!--分秒-->
+        </div>
+
+    </div>
+    <div id="headDivBorderbottom"></div>
+
+    <div id="loginDiv" >
+        <!--<div id="loginDivInfo">
+            <span id="linkIndex" ></span>
+        </div>-->
+        <div id="scrollNotice">
+            <!--<div id="announcementDiv">
+                通知公告
+            </div>-->
+            <div id="scrollDiv">
+                <div id="scrollBegin">
+            
+                </div>
+                <div id="scrollEnd">
+
+                </div>
+            </div>
+        </div>
+        <!--<div id="functionMenuDiv">
+            功能菜单
+        </div>
+        <ul id="action">
+            <li><a href="laws.htm"><span class="iconfont">&#xf02d;</span>异常/报警管理</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf031;</span>设备管理</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xe971;</span>维保人员</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf035;</span>通知文档</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf011;</span>政策法规</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf0d3;</span>设备总览</a> </li>
+            <li><a href="#"><span class="iconfont ">&#xf097;</span>设施巡查记录</a> </li>
+        </ul>-->
+    </div>
+
+    <div id="mainDiv2">
+        <!--左边那个黑边边，感觉并不是很好看-->
+        <div style="width:10px;height:100%;background-color:#f1f5f8;float:left"></div>
+        <div id="menuDiv">
+            <div id="indexPage">
+                <span  class="iconfont">&#xe900;</span>&nbsp&nbsp&nbsp&nbsp系统首页
+            </div>
+            <div id="subSystemPage">
+                <span class="iconfont">&#xf27c;</span>&nbsp&nbsp&nbsp&nbsp视图总览
+            </div>
+            <div id="menuName">
+                <span class="iconfont">&#xe998;</span>&nbsp&nbsp&nbsp&nbsp监测系统
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="pageSelect">
+                <li id="waterpressure" >
+                    <img src="images/public/fire_hydrant.png"/>
+                    <span>水压监控</span>
+                    
+                </li>
+
+                <li id="networkAlarm" >
+                    <img src="images/public/alarm%20(1).png"/>
+                    <span>联网报警</span>
+                    
+                </li>
+
+                <li id="fireInspection" >
+                    <img src="images/public/cruiser.png"/>
+                    <span>消防巡检</span>
+                    
+                </li>
+
+                <li id="facilityPatrol" >
+                    <img src="images/public/facilitiesInspection.png"/>
+                    <span>设施巡查</span>
+                   
+                </li>
+
+                <!-- <li id="videoMonitor" >
+                    <img src="images/public/videoMonitor.png"/>
+                    <span>视频监控</span>
+                    <div class="spanNum">16</div>
+                </li> -->
+            </div>
+            <div id="businessManagement">
+                <span class="iconfont">&#xe99b;</span>&nbsp&nbsp&nbsp&nbsp业务管理
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="functionSelect">
+               <!--  <li id="equipmentManagement" >
+                    <img src="images/public/equipmentManagement.png"/>
+                    <span>设备管理</span>
+                    <div class="spanNum">23</div>
+                </li> -->
+                <li id="abnormalManagement" >
+                    <img src="images/public/abnormalManagement.png"/>
+                    <span>异常报警管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="abnormalAnalysis" >
+                    <img src="images/public/abnormalAnalysis.png"/>
+                    <span>异常报警分析</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <!--<li id="alarmAnalysis" >
+                    <img src="images/public/alarmAnalysis.png"/>
+                    <span>报警分析</span>
+                    &lt;!&ndash;<div class="spanNum">23</div>&ndash;&gt;
+                </li>-->
+                <li id="maintenancePersonnel" >
+                    <img src="images/public/maintenancePersonnel.png"/>
+                    <span>维保人员</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="notificationDocument" >
+                    <img src="images/public/notificationDocument.png"/>
+                    <span>通知文档</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="policieAndRegulation" >
+                    <img src="images/public/policieAndRegulation.png"/>
+                    <span>政策法规</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="equipSelect" >
+                	<img src="images/public/facilitySet.png"/>
+                	<span> 设备查询</span>
+                </li>
+				<li id="dataSelect" >
+					<img src="images/public/dataSet.png"/>
+					<span> 基础资料</span>
+				</li>
+				<li id="monitor_building" >
+					<img src="images/public/monitorBuilding.png"/>
+					<span> 监测楼栋</span>
+				</li>
+				<li id="monitor_hostMachine" >
+					<img src="images/public/server.png"/>
+					<span> 监测主机</span>
+				</li>
+            </div>
+            <div id="menuapp">
+                <div id="appImage"></div>
+                <div id="appText">扫描二维码下载APP</div>
+            </div>
+        </div>
+        <!--
+            /* 红色：E51400 绿色：339933 蓝色：1BA1E2 橙色：F09609 草绿：8CBF26 湖蓝：00ABA9 洋红：FF0097 粉色：E671B8 棕色：996600 紫色：A200FF*/
+        -->
+        <div id="contentDiv">
+            <div id="indexTittle">
+                业务管理 > 设备查询
+            </div>
+
+            <div id="show">
+                <div id="searchDiv">
+                    <ul>
+                        <li class="search-title iconfont">切换搜索模式 &#xf087;</li>
+
+						<!--<li class="search-Test Detail-search" id="search-TypeSystem">系统选择</li>
+                        <li id="search-system" class="Detail-search">
+                            <select  id="selectSystem" class="selectResult" condition="id">
+                            </select>
+                        </li>-->
+                        
+                        <li class="search-Test Detail-search" id="search-Type">设备类型</li>
+                        <li id="search-TypeSelect" class="Detail-search">
+                            <select id="selectType" class="selectResult" condition="fireFacilityType">
+                            </select>
+                        </li>
+
+                        <li class="search-Test Detail-search" id="search-square">校区选择</li>
+                        <li id="search-squares" class="Detail-search">
+                            <select  id="selectsquare" class="selectResult" condition="fire_unit.unitID">
+                            </select>
+                        </li>
+
+
+                        <li class="search-Test Detail-search" id="search-Building">楼栋选择</li>
+                        <li id="search-buildings" class="Detail-search">
+                            <select  id="selectbuilding" class="selectResult" condition="buildingID">
+                            </select>
+                        </li>
+
+                        <!--<li class="search-Test Detail-search" id="search-handle">异常状态</li>
+                        <li id="search-HandleSelect" class="Detail-search" >
+                            <select id="selectHandle"class="selectResult" condition="mvfaultDealState">
+                            </select>
+                        </li>
+
+                        <li class="search-Test Detail-search" id="search-TypeTime">异常时间</li>
+                        <li id="search-time" class="Detail-search">
+                            <input class="timeBox" value="" id="startTime"  placeholder="开始时间" type="text" condition="timeStart">
+                            <span>&#45;&#45;</span>
+                            <input class="timeBox " value="" id="endTime" placeholder="截止时间"  type="text" condition="timeEnd">
+                        </li>-->
+
+                        <!--<li class="search-Test" id="search-Condition">搜索条件</li>-->
+                        <li id="search-Conditions" class="Fuzz-search">
+                            <input id="fuzzySearch" class="ConditionBox" placeholder="输入搜索条件">
+                        </li>
+
+
+                        <li class="search-Test" id="search-Submit">
+                            <div id="searchSubmit" class="sureButtum">提交</div>
+                        </li>
+
+                        <li class="search-Test" id="search-Reset">
+                            <div id="searchReset" class="sureButtum">重置</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="abnorTableDiv" style="width:100%;height:810px;position:relative" >
+                    <table id="abnorTable" class="table table-striped standTable">
+                    </table>
+                </div>
+                <div id="page_navigation">
+                  <ul>
+                        <li class="iconfont icon-page" id="firstPage" title="首页">&#xea1a;</li>
+                        <li class="iconfont icon-page" id="prePage" title="上一页">&#xea44;</li>
+                        <li class="page_span1">第</li>
+                        <li class="input_box"><input id="nowPage" class="num_box" type="text"></li>
+                        <li class="page_span2">/<span id="totalPage"></span>&nbsp页</li>
+                        <li class="iconfont icon-page" id="nextPage" title="下一页">&#xea42;</li>
+                        <li class="iconfont icon-page" id="lastPage" title="尾页">&#xea1b;</li>
+                    </ul>
+                    <div id="pageSummary">
+                        共&nbsp<span id="totalNum"></span>&nbsp条数据
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="footerDiv" >
+        Copyright © By College of Automation of CQU, 2016
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

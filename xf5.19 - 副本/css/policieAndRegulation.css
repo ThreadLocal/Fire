@@ -1,0 +1,200 @@
+[genuitec-file-id="wc1-74"],[genuitec-lp-path="/Fire/WebRoot/xf5.19 - ¸±±¾/css/policieAndRegulation.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+/*#show{
+    background: linear-gradient(to bottom, #d4eeff, #ffffff);
+}*/
+/*#mainContentDiv{
+    width:100%;
+    height:876px;
+    /!*position:relative;*!/
+    margin-top:10px;
+
+}*/
+#mainContentLeftDiv{
+    width: calc(100% - 2px);
+    height:874px;
+    /*position:relative;*/
+    float:left;
+    margin-top:10px;
+    border: 1px solid #bababa;
+    /* margin-bottom: 10px;*/
+    /* margin-left:200px; */
+    /*border-radius: 5px;*/
+    background-color: #FFFFFF;
+    /*box-shadow: 0px 2px 5px rgba(50,50,50,0.45);*/
+}
+.noticeTitle{
+    width: calc(100% - 15px);
+    height: 40px;
+    color: #707070;
+    padding-left: 15px;
+    border-bottom: 1px solid #bababa;
+    /* border-top: 1px solid #bababa;*/
+    background: linear-gradient(to bottom, #f6f6f6,#e4e4e4);
+    font-size: 18px;
+    line-height: 41px;
+    position: relative;
+}
+#detailNotice{
+    width: calc(100% - 40px);
+    height: 795px;
+    margin:20px;
+}
+.views-page-row {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width:100%;
+    height:31px;
+    line-height: 32px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.views-title{
+    float:left;
+}
+.hotImage{
+    width:4%;
+    height:100%;
+    float:left;
+    background-image: url("../images/hot.gif");
+    background-repeat: no-repeat;
+}
+.views-field-title{
+    width:80%;
+    height:100%;
+    float:left;
+}
+.views-field-changed{
+    width:20%;
+    height:100%;
+    float:left;
+}
+.views-page-row > .views-field-title {
+    display: block;
+    float: left;
+}
+.view-announcement .views-field-title {
+    display: inline-block;
+    min-width: 80%;
+}
+.views-page-row > .views-field > .views-title > a {
+    display: block;
+    font-size: 14px;
+
+}
+.views-title > a {
+    /*    color: #157FAC; */
+    color: #2662E3;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+}
+.views-title > a:hover{
+    color:#43039f;
+    text-decoration: underline;
+}
+
+.views-page-row > .views-field-changed > .views-updated-date {
+    display: block;
+    float: right;
+}
+.views-updated-date {
+    color: #767676;
+    padding: 0px 0px 8px;
+    font-size: 12px;
+}
+
+#pageSwitch{
+    width:100%;
+    height:43px;
+    text-align:center ;
+    line-height:50px;
+    font-size:16px;
+    color: #2662E3;
+    font-weight: 700;
+}
+#previousPage, #nextPage{
+    cursor: pointer;
+}
+
+/* ËÑË÷¿ò */
+#searchDiv{
+    width: 230px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+#search{
+    border: 2px solid #67b2dd;
+    border-radius: 15px;
+    width: 200px;
+    height: 25px;
+    float:left;
+    right: 10px;
+    top: 7px;
+    background: white;
+}
+.searchInput {
+    outline: none;
+    border: none;
+    display: inline-block;
+    margin-left: 10px;
+    width:83%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    float:left;
+}
+.searchReset {
+    font-size: 16px;
+    color:#67b2dd;
+    cursor: pointer;
+    float:left;
+    width:20px;
+    height:100%;
+    line-height: 1.7;
+}
+.searchSubmit {
+    font-size: 16px;
+    color:#67b2dd;
+    cursor: pointer;
+    float:left;
+    width:20px;
+    height:100%;
+    margin-left: 6px;
+    line-height: 1.9;
+}
+
+
+
+#page_navigation{
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 44px;
+    position: relative;
+    /*background-color: #EFF2F7;*/
+    border-top: 1px solid #dadde2;
+    border-bottom: none;
+}
+#page_navigation ul{
+   width:23.95209%;/*400/1670*/
+	height:100%;/*44*/
+	list-style:none;
+	position: relative;
+	left:42%;
+	float:left;
+}
+#page_navigation ul li{
+	line-height:3.37em;
+}
+.num_box{
+	height:50%;
+}
+#pageSummary{
+	line-height:3;
+}

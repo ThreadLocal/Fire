@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--禁止屏幕缩放-->
+    <!--<meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>-->
+    <title>视频监控</title>
+    <link rel="stylesheet" href="css/public/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/public/navigation.css" type="text/css" />
+    <link rel="stylesheet" href="css/videoMonitor.css" type="text/css" />
+
+    <script type="text/javascript" src="js/public/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/public/jquery-ui-1.10.3.custom.js"></script>
+    <script type="text/javascript" src="js/public/default.js"></script>
+    <script type="text/javascript" src="js/videoMonitor.js"></script>
+
+<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"51974",secure:"51983"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+
+<body id="body" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-95" data-genuitec-path="/Fire/WebRoot/xf5.19 - 副本/videoMonitor.htm">
+<div id="mainDiv"  data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-95" data-genuitec-path="/Fire/WebRoot/xf5.19 - 副本/videoMonitor.htm">
+    <div id="headDiv">
+        <div id="headDivLogo" style="background-image: url('images/public/logo.png');">
+        </div>
+        <div id="headDivTitle">
+            智慧消防安全云服务平台
+        </div>
+        <div id="beforeLogin"> 
+        	<a href="../xf8.29/login.htm" style='text-decoration:underline'>管理系统登录</a>
+        </div>
+        <div id="login"><i style="color:white;">&#xe971;</i><span >王五</span><span id="login-button">&#xf05b;</span>
+        </div>
+        <div id="user-pop"style="display:none">
+            <div id="pop-triangle"></div>
+            <div id="pop-select">
+                <ul>
+                    <li id="userInformation" ><span>&#xe995;</span>个人资料</li>
+                    <li id="passwordChange"><span>&#xe971;</span>密码修改</li>
+                    <div id="pop-select-interval"></div>
+                    <li id="loginOut"><span>&#xe9b6;</span>退出</li>
+                </ul>
+            </div>
+        </div>
+        <div id="headDivTime">
+
+            <li id="nowWeek-Date">
+                <ul>
+                    <li id="nowWeek"></li><!--星期-->
+                    <li id="nowDate"></li><!--年月-->
+                </ul>
+            </li>
+            <li id="nowTime"></li><!--分秒-->
+        </div>
+
+    </div>
+    <div id="headDivBorderbottom"></div>
+
+    <div id="loginDiv">
+        <div id="scrollNotice">
+            <!--<div id="announcementDiv">
+                通知公告
+            </div>-->
+            <div id="scrollDiv">
+                <div id="scrollBegin">
+                    滚动的文字1；
+                    滚动的文字2；
+                    滚动的文字3；
+                    滚动的文字4；
+                    滚动的文字5；
+                    滚动的文字6；
+                    滚动的文字7；
+                    滚动的文字8；
+                    滚动的文字9；
+                    滚动的文字10；
+                    滚动的文字11；
+                    滚动的文字12；
+                    滚动的文字13；
+                    滚动的文字14；
+                    滚动的文字15；
+                </div>
+                <div id="scrollEnd">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainDiv2">
+        <!--左边那个黑边边，感觉并不是很好看-->
+        <div style="width:10px;height:100%;background-color:#f1f5f8;float:left"></div>
+        <div id="menuDiv">
+            <div id="indexPage">
+                <span  class="iconfont">&#xe900;</span>&nbsp&nbsp&nbsp&nbsp系统首页
+            </div>
+            <div id="subSystemPage">
+                <span class="iconfont">&#xf27c;</span>&nbsp&nbsp&nbsp&nbsp视图总览
+            </div>
+            <div id="menuName">
+                <span class="iconfont">&#xe998;</span>&nbsp&nbsp&nbsp&nbsp监测系统
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="pageSelect">
+                <li id="waterpressure" >
+                    <img src="images/public/fire_hydrant.png"/>
+                    <span>水压监控</span>
+                    
+                </li>
+
+                <li id="networkAlarm" >
+                    <img src="images/public/alarm%20(1).png"/>
+                    <span>联网报警</span>
+                    
+                </li>
+
+                <li id="fireInspection" >
+                    <img src="images/public/cruiser.png"/>
+                    <span>消防巡检</span>
+                    
+                </li>
+
+                <li id="facilityPatrol" >
+                    <img src="images/public/facilitiesInspection.png"/>
+                    <span>设施巡查</span>
+                    
+                </li>
+
+                <!-- <li id="videoMonitor" >
+                    <img src="images/public/videoMonitor.png"/>
+                    <span>视频监控</span>
+                    <div class="spanNum">16</div>
+                </li> -->
+            </div>
+            <div id="businessManagement">
+                <span class="iconfont">&#xe99b;</span>&nbsp&nbsp&nbsp&nbsp业务管理
+                <span  class="iconfont menuDown">&#xf05b;</span>
+            </div>
+            <div id="functionSelect">
+               <!--  <li id="equipmentManagement" >
+                    <img src="images/public/equipmentManagement.png"/>
+                    <span>设备管理</span>
+                    <div class="spanNum">23</div>
+                </li> -->
+                <li id="abnormalManagement" >
+                    <img src="images/public/abnormalManagement.png"/>
+                    <span>异常报警管理</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="abnormalAnalysis" >
+                    <img src="images/public/abnormalAnalysis.png"/>
+                    <span>异常报警分析</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <!--<li id="alarmAnalysis" >
+                    <img src="images/public/alarmAnalysis.png"/>
+                    <span>报警分析</span>
+                    &lt;!&ndash;<div class="spanNum">23</div>&ndash;&gt;
+                </li>-->
+                <li id="maintenancePersonnel" >
+                    <img src="images/public/maintenancePersonnel.png"/>
+                    <span>维保人员</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="notificationDocument" >
+                    <img src="images/public/notificationDocument.png"/>
+                    <span>通知文档</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="policieAndRegulation" >
+                    <img src="images/public/policieAndRegulation.png"/>
+                    <span>政策法规</span>
+                    <!--<div class="spanNum">23</div>-->
+                </li>
+                <li id="equipSelect" >
+                	<img src="images/public/facilitySet.png"/>
+                	<span> 设备查询</span>
+                </li>
+				<li id="dataSelect" >
+					<img src="images/public/dataSet.png"/>
+					<span> 基础资料</span>
+				</li>
+				<li id="monitor_building" >
+					<img src="images/public/monitorBuilding.png"/>
+					<span> 监测楼栋</span>
+				</li>
+				<li id="monitor_hostMachine" >
+					<img src="images/public/server.png"/>
+					<span> 监测主机</span>
+				</li>
+            </div>
+            <div id="menuapp">
+                <div id="appImage"></div>
+                <div id="appText">扫描二维码下载APP</div>
+            </div>
+        </div>
+        <!--
+            /* 红色：E51400 绿色：339933 蓝色：1BA1E2 橙色：F09609 草绿：8CBF26 湖蓝：00ABA9 洋红：FF0097 粉色：E671B8 棕色：996600 紫色：A200FF*/
+        -->
+        <div id="contentDiv">
+            <div id="indexTittle">
+                <span>监测系统 > 视频监控</span>
+            </div>
+            <div id="show">
+                <div class="monitorDiv firstLine">
+                    <div class="monitorTitle">现场监控1</div>
+                    <div id="localeMonitorFirst" class="monitorContent">
+                        <object type='application/x-vlc-plugin' width="100%" height="100%">
+                            <param name='mrl' value='rtsp://admin:asdf1234@172.20.33.112:554/h264/ch1/main/av_stream' />
+                        </object>
+                        <div class="prompt">
+                            建议使用<span class="browser">火狐浏览器</span>并安装<span class="media">VLC media player</span>
+
+                        </div>
+                        </div>
+                </div>
+                <div class="monitorDiv secondLine">
+                    <div class="monitorTitle">现场监控2</div>
+                    <div id="localeMonitorSecond" class="monitorContent">
+                        <object type='application/x-vlc-plugin' width="100%" height="100%">
+                            <param name='mrl' value='rtsp://admin:asdf1234@172.20.33.114:554/h264/ch1/main/av_stream' />
+                        </object>
+                        <div class="prompt">
+                            建议使用<span class="browser">火狐浏览器</span>并安装<span class="media">VLC media player</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitorDiv firstLine">
+                    <div class="monitorTitle">现场监控3</div>
+                    <div id="localeMonitorThird" class="monitorContent">
+                        <object type='application/x-vlc-plugin' width="100%" height="100%">
+                            <param name='mrl' value='rtsp://admin:asdf1234@172.20.33.116:554/h264/ch1/main/av_stream' />
+                        </object>
+                        <div class="prompt">
+                            建议使用<span class="browser">火狐浏览器</span>并安装<span class="media">VLC media player</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitorDiv secondLine">
+                    <div class="monitorTitle">现场监控4</div>
+                    <div id="localeMonitorFouth" class="monitorContent">
+                        <object type='application/x-vlc-plugin' width="100%" height="100%">
+                            <param name='mrl' value='rtsp://admin:asdf1234@172.20.33.118:554/h264/ch1/main/av_stream' />
+                        </object>
+                        <div class="prompt">
+                            建议使用<span class="browser">火狐浏览器</span>并安装<span class="media">VLC media player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerDiv" >
+        Copyright © By College of Automation of CQU, 2016
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

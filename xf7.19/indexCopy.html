@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统首页</title>
+    <style>
+        div.time{
+            box-shadow: 4px 4px 4px rgb(12,12,123);
+        }
+    </style>
+</head>
+<body>
+
+<a id="A">元素A</a>
+
+
+
+</body>
+<script type="text/javascript">
+
+    var domA = document.getElementById('A');
+
+    //冒泡
+    domA.addEventListener('click',function () {
+        alert('A')
+    },false)
+
+    //捕获
+    domA.addEventListener('click',function () {
+        alert('B')
+    },true)
+
+
+</script>
+</html>

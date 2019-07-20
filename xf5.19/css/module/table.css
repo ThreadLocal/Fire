@@ -1,0 +1,42 @@
+[genuitec-file-id="wc1-25"],[genuitec-lp-path="/Fire/WebRoot/xf5.19/css/module/table.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+.standTable{
+	width:100%;
+	max-width: 100%;
+	/*height: 100%;*/
+	color:#052;
+	border-collapse: collapse;
+
+	table-layout: fixed;
+}
+.standTable th {
+	height: 22px;
+	background: #b9e0c1;
+	padding: 7px 0 7px 0;
+	font-size: 1.4rem;
+	line-height:1.3;
+	text-align: center;
+	color: #0c3854;
+	font-weight: 800;
+}
+.standTable td {
+	height: 17px;
+	padding: 7px 0 7px 0;
+	line-height: 1.0;
+	text-align: center;
+	border-bottom: 0.1rem #d5dee6 solid;
+	font-size: 1.3rem;
+
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.standTable tr:nth-child(even) {
+	background: #f4f4f4;
+}
+.standTable tr:nth-child(odd) {
+	background: #fdfdfd;
+}

@@ -1,0 +1,118 @@
+[genuitec-file-id="wc1-70"],[genuitec-lp-path="/Fire/WebRoot/xf5.19 - 副本/css/monitor_hostMachine.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+.standTable{
+	width:100%;
+	max-width: 100%;
+	/*height: 100%;*/
+	color:#052;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.standTable th {
+	height: 31px;
+	background: #b9e0c1;
+	font-size: 1.4rem;
+	line-height:31px;
+	text-align: center;
+	color: #0c3854;
+	font-weight: 800;
+}
+.standTable td {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px #d5dee6 solid;
+	font-size: 1.3rem;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.standTable tr:nth-child(even) {
+	background: #fdfdfd;
+}
+.standTable tr:nth-child(odd) {
+	background: #f4f4f4;
+}
+.standTable th:nth-child(1),.standTable th:nth-child(5),.standTable th:nth-child(6){
+	width: 10%;
+}
+.standTable th:nth-child(2),.standTable th:nth-child(3),.standTable th:nth-child(4),.standTable th:nth-child(7){
+	width: 17.6%;
+}
+.standTable td:nth-child(1),.standTable td:nth-child(5),.standTable td:nth-child(6){
+	width: 10%;
+}
+.standTable td:nth-child(2),.standTable td:nth-child(3),.standTable td:nth-child(4),.standTable td:nth-child(7){
+	width: 17.6%;
+}
+
+/*分页部分代码*/
+#page_navigation{
+	list-style:none;
+	width:100%;
+	height:32px;/*44/1670*/
+	position: relative;
+	background-color: #f4f4f4;
+	border-bottom: 0.1rem #d5dee6 inset;
+}
+#page_navigation ul{
+	width:23.95209%;/*400/1670*/
+	height:100%;/*44*/
+	list-style:none;
+	position: relative;
+	left:39%;
+	float:left;
+}
+#page_navigation ul li {
+	float: left;
+	line-height:1.8em !important;
+}
+.num_box{
+	height:63%;
+}
+#pageSummary{
+    line-height: 1.8;
+}
+
+#person-all{
+    width:100%;
+    height:100%;/*880/945*/
+}
+#center-table{
+    width:1693px;/*1640/1670*/
+    height:875px;/*480/880*/
+    border:1px solid #bababa;
+   /* background-color: #dddddd;*/
+    margin-top:10px;
+}
+#topTable-title{
+    width: 1678px;
+    height: 35px;
+    float: left;
+    color: #707070;
+    padding-left: 15px;
+    border-bottom: 1px solid #bababa;
+    background: linear-gradient(to bottom, #f6f6f6,#e4e4e4);
+    font-size: 18px;
+    line-height: 35px;
+}
+
+#table-text{
+    height:840px;/*(435-2)/480*/
+    /*margin-top:10px;*/
+    width:100%;/**/
+    float:left;
+    /*border: 0.1rem #b8c4d0 solid;*/
+}
+
+#hostMachineTableDiv{
+    width:100%;/*1628/1640*/
+    height:806px;/*340/433*/
+    /*margin:0.304878% 0.304878% 0 0.304878%;/!*5/1640*!/*/
+    overflow: hidden;
+}
+
+

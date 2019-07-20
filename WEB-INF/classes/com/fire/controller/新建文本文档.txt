@@ -1,0 +1,3 @@
+showNotificationDocument(
+			"SELECT * FROM notificationdocument WHERE 1=1"
+			),

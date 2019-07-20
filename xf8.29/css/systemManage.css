@@ -1,0 +1,59 @@
+[genuitec-file-id="wc1-118"],[genuitec-lp-path="/Fire/WebRoot/xf8.29/css/systemManage.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+.area{
+	margin-top: 10px;
+	width:1695px;
+	height:924px;
+	border:1px solid #bababa;
+	border-radius: 0.4rem;
+	background-image: url("../images/login/login.png");
+	background-size: 100% 95%;
+}
+
+.block{
+	width:403px;
+	height: 210px;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: rgba(100, 196, 177, 0.71);
+	border:4px solid  #64c4b1;
+	border-radius: 0.4rem;
+	font-size: 14px;
+	float: left;
+}
+.block div{
+	width: 230px;
+	padding-top: 100px;
+	float: left;
+}
+.block span{
+	color: #ffffff;;
+	padding-left:30px;
+	margin-top: 10px;
+	line-height: 30px;
+}
+.chinese{
+	font-size: 22px;
+}
+.block img{
+	width:120px;
+	height:120px;
+	margin-top: 60px;
+	float: left;
+}
+.edge{
+	margin-right:0px ;
+}
+.area p{
+	font-size:56px;
+	color:#fff;
+	text-align: center;
+	margin-top: 300px;
+}
+.area p i{
+	display: block;
+	font-size: 100px;
+	margin-top: 80px;
+}

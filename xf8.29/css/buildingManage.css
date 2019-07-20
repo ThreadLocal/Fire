@@ -1,0 +1,416 @@
+[genuitec-file-id="wc1-100"],[genuitec-lp-path="/Fire/WebRoot/xf8.29/css/buildingManage.css"],[genuitec-lp-enabled=false]{
+  /* for codelive */
+}
+
+#subSystemSelect{
+    /*width:345px;*/
+    width:315px;
+    height:100%;
+    /*margin-right:15px;*/
+    float:right;
+    font-size: 16px;
+}
+.subSystem{
+    width:90px;
+    height:30px;
+    float:right;
+    margin-right:15px;
+    margin-top:2px;
+}
+.subSystem input{
+    width:100%;
+    height:100%;
+    float:right;
+    border-radius: 4px;
+    /*background-color: #dddddd;
+    color:#000000;*/
+}
+.subSystem input:hover{
+    background-color: #4193d1;
+    opacity: 0.8;
+    color:#ffffff;
+    cursor: pointer;
+}
+.input{
+    background-color: #296bb4;
+    color:#ffffff;
+}
+#mainContentDiv{
+    width:100%;
+    height:886px;
+}
+.middleDiv{
+    width:calc(100% - 2px);
+    height:calc(33.33% - 10px - 2px);
+    margin-top:10px;
+    border: 1px solid #bababa;
+}
+.titleDiv{
+    width: calc(100% - 15px);
+    height: 40px;
+    color: #707070;
+    padding-left: 15px;
+    border-bottom: 1px solid #bababa;
+    background: linear-gradient(to bottom, #f6f6f6,#e4e4e4);
+    font-size: 18px;
+    line-height: 41px;
+}
+.manageButton{
+    width:80px;
+	height:30px;
+	float:right;
+	margin:5px 0;
+}
+/* .manageButton form{
+    float:left;
+
+}
+.manageButton form input{
+    box-sizing: border-box;
+    text-align:center;
+    height:25px;
+    margin-top:8px;
+    border-radius:4px;
+    border:1px solid #c8cccf;
+    -web-kit-appearance:none;
+    -moz-appearance: none;
+    display:inline-block;
+    outline:0;
+    padding:0 1em;
+    text-decoration:none;
+    cursor:pointer;
+} */
+.campusDiv{
+    width:100%;
+    height:calc(100% - 41px);
+    /*background-color: #ffffff;*/
+    float:left;
+}
+.campusWholeDiv{
+    width:200px;
+    height:calc(100% - 20px - 2px);
+    float:left;
+    margin:10px 0 10px 10px;
+    background-color: #ffffff;
+    /*border: 1px solid #1ba4d4;*/
+}
+.campusImageDiv{
+    width:calc(100% - 10px);
+    height:calc(66.66% - 5px);
+    margin:5px 5px 0 5px;
+    float:left;
+}
+#campusA{
+    background: url("../../xf5.19/images/building/A.jpg") no-repeat;
+    background-size: cover;
+}
+#campusB{
+    background: url("../../xf5.19/images/building/B.jpg") no-repeat;
+    background-size: cover;
+}
+#campusC{
+    background: url("../../xf5.19/images/building/C.jpg") no-repeat;
+    background-size: cover;
+}
+.campusInformationDiv{
+    width:100%;
+    height:calc(100% - 66.66% - 5px);
+    float:left;
+    margin-top:5px;
+    /*background-color: #4d81a9;*/
+    color:#000000;
+    font-size:20px;
+    text-align: center;
+    line-height:64px;
+}
+.campusDetailDiv{
+    width:calc(100% - 200px - 10px - 10px);
+    margin:0 10px 0 0;
+    height:100%;
+    float:left;
+    overflow: auto;
+}
+.buildingDiv{
+    width:170px;
+    height:104px;
+    float:left;
+    margin:10px 0 0 10px;
+    background-color: #ffffff;
+    border:1px solid #dddddd;
+    cursor: pointer;
+}
+.buildingDiv:hover{
+    background-color:#ffffed;
+}
+.buildingTitle{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width:100%;
+    height:46px;
+    float:left;
+    font-size:20px;
+    text-align: center;
+    line-height:46px;
+    color: #244f9d;
+
+   /* border-bottom: 1px solid #1ba4d4;*/
+    /*background-color: #1ba4d4;*/
+}
+.buildingContent{
+    width:100%;
+    height:calc(100% - 46px);
+    float:left;
+    font-size: 16px;
+    text-align: center;
+}
+.buildingContent span{
+    color:#157FAC;
+    font-size:17px;
+}
+
+
+#noticeDiv {
+    left:43%;
+    top: 10%;
+    position:absolute;
+    background-color: rgb(255,255,255);
+    z-index: 11;
+}
+.windowBody {
+    padding: 10px;
+    border: 0.1rem solid rgb(214, 214, 214);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -khtml-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 0 1rem rgba(0,0,0,.7);
+    -moz-box-shadow: 0 0 1rem rgba(0,0,0,.7);
+    -khtml-box-shadow: 0 0 1rem rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    z-index: 2;
+}
+#noticeTitleDiv {
+    width: calc(100% - 16px);
+    height: 35px;
+    padding-left: 16px;
+    margin-bottom: 10px;
+    cursor: move;
+    background: #098876;
+    color: white;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#windowClose{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    text-align: center;
+    right: 16px;
+}
+#windowClose:hover{
+    cursor: pointer;
+}
+
+#newNoticeContentDiv{
+    width:100%;
+    height: calc(100% - 35px - 10px);
+    font-size: 18px;
+    line-height:2;
+    color: #38c;
+    /*text-align: center;*/
+    vertical-align:middle;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/fonts1/icomoon.eot?2zeaq8');
+    src:  url('../fonts/fonts1/icomoon.eot?2zeaq8#iefix') format('embedded-opentype'),
+    url('../fonts/fonts1/icomoon.ttf?2zeaq8') format('truetype'),
+    url('../fonts/fonts1/icomoon.woff?2zeaq8') format('woff'),
+    url('../fonts/fonts1/icomoon.svg?2zeaq8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.iconfont{
+    font-family: "icomoon";
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#contentFormDiv{
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+}
+#contentFormDiv form{
+    width:100%;
+    height: 100%;
+    color:#000000;
+    font-size:16px;
+    position: relative;
+
+}
+#contentFormDiv form input{
+    box-sizing: border-box;
+    text-align:center;
+    height:25px;
+    border-radius:4px;
+    border:1px solid #c8cccf;
+    -web-kit-appearance:none;
+    -moz-appearance: none;
+    line-height:25px;
+}
+/*.fileInput{
+    color:#6a6f77;
+}
+#fileSize{
+    width:80%;
+    height:25%;
+    padding-left:22%;
+}*/
+.newButtonDiv{
+    width:70px;
+    height:35px;
+    margin-top:10px;
+    /* line-height:35px; */
+    color:#ffffff;
+    font-size:18px;
+    background-color: #2cb5b5;
+    border-radius: 5px;
+    text-align: center;
+}
+.newButtonDiv:hover{
+    cursor: pointer;
+}
+#newButtonDiv1{
+    float:left;
+    margin-left: 40px;
+}
+#newButtonDiv2{
+    float:right;
+    margin-right: 40px;
+
+}
+#formContentDiv{
+    width:100%;
+    height:calc(100% - 35px);
+    position: absolute;
+    top:0;
+}
+#topContentDiv{
+    width:calc(100% - 2px);
+    height:calc(210px - 2px);
+    border:1px solid #cccccc;
+}
+#topLeftDiv{
+    width:calc(50% - 1px - 20px);
+    height:calc(100% - 10px);
+    float:left;
+    border-right:1px solid #cccccc;
+    padding:10px;
+    padding-top:0;
+}
+#topRightDiv{
+    width:50%;
+    height:100%;
+    float:left;
+    /*border-right:1px solid #cccccc;*/
+}
+#rightImageDiv{
+    width:calc(100% - 20px);
+    height:150px;
+    margin:10px;
+    /* background: url("../images/building/1010.jpg") no-repeat; */
+    background-size: cover;
+}
+#rightInputDiv{
+    width:100%;
+    height:calc(100% - 150px - 20px);
+}
+#bottomContentDiv{
+    width:calc(100% - 2px);
+    height:calc(100% - 210px - 1px - 30px - 10px);
+    border:1px solid #cccccc;
+    border-top:0;
+    overflow: auto;
+}
+.floorInformation,.floorInformationDiv{
+    width:100%;
+    height:30px;
+    /*display: none;*/
+}
+.floorName{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width:calc(40% - 10px);
+    height:100%;
+    float:left;
+    padding-left: 10px;
+}
+.floorName input{
+    width:40%;
+    height:100%;
+}
+.floorSvg{
+    width:60%;
+    height:100%;
+    float:left;
+}
+.floorSvg input{
+    width:55%;
+    height:100%;
+}
+.floorNameDiv{
+    width:calc(40% - 10px);
+    height:100%;
+    float:left;
+    padding-left: 10px;
+}
+.floorNameDiv input{
+    width:40%;
+    height:100%;
+}
+.floorSvgDiv{
+    width:43%;
+    height:100%;
+    float:left;
+}
+.floorSvgDiv input{
+    width:35%;
+    height:100%;
+}
+.changeButton{
+    width:15%;
+    height:100%;
+    float:left;
+}
+.changeButton input{
+    width:100%;
+    /*height:100%;*/
+    margin-top:5px;
+}
+#addFloorDiv{
+    width:100%;
+    height:30px;
+    /*margin-top:10px;*/
+    text-align: center;
+    line-height:30px;
+    font-size:16px;
+}
+#addFloor{
+    cursor: pointer;
+    width:50%;
+    height:100%;
+    margin:0 100px 0 100px;
+}
+#formSubmit{
+    width:100%;
+    height:35px;
+    position: absolute;
+    bottom:0;
+}
