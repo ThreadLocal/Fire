@@ -1,1 +1,19 @@
 this is a test!!!!!
+
+下载代码库
+git clone https://.......
+
+查看项目状态：
+git status
+
+添加修改项:
+git add .
+
+记录当前版本信息：
+git commit -m "说明"
+
+创建和查看分支
+git branch (branchname)
+
+切换分支
+git checkout (branchname)
